@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>癒しの湯</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/reserve.js"></script>
+</head>
+<body>
+  <header id="header">
+    <h1 class="site-title"><img src="img/logo.png" alt="COFFEE"></h1>
+    <p>癒しの湯</p>
+    <nav id="navi">
+      <ul class="nav-menu">
+        <li><a href="./index.html">トップ</a></li>
+        <li><a href="./room.html">客室</a></li>
+        <li><a href="./spa.html">温泉</a></li>
+        <li><a href="./dinner.html">お食事</a></li>
+        <li><a href="./access.html">アクセス</a></li>
+        <li><a href="./reserve.html" class="reserve-btn">ご予約</a></li>
+    </nav>
+
+    <div class="toggle_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="mask"></div>
+  </div>
+  </header>
+
+<main> 
+  <div class="reserve container">
+    <h1>ご予約フォーム</h1>
+  <form action="form.php" method="post">
+    <div id="textSection">
+      <p><label for="text">氏名</label></p>
+      <p class="alert">氏名を入力してください</p>
+      <input type="text" id="text" name="text" value="">
+    </div>
+
+    <div id="telSection">
+      <p><label for="text">電話番号</label></p>
+      <p class="alert">電話番号を入力してください</p>
+      <input type="text" id="tel1" name="your-tel1"> -
+      <input type="text" id="tel2" name="your-tel2"> -
+      <input type="text" id="tel3" name="your-tel3">
+    </div>
+    
+    <div id="l-selectSection">
+      <p>大人</p>
+      <p class="alert">人数を入力してください</p>
+      <select>
+        <option value="none">---</option>
+        <option value="Select1">0名様</option>
+        <option value="Select2">1名様</option>
+        <option value="Select3">2名様</option>
+      </select>
+    </div>
+    <div id="s-selectSection">
+      <p>小人</p>
+      <p class="alert">人数を入力してください</p>
+      <select>
+        <option value="none">---</option>
+        <option value="Select1">0名様</option>
+        <option value="Select2">1名様</option>
+        <option value="Select3">2名様</option>
+      </select>
+    </div>
+    <div id="textareaSection">
+      <p>
+        <label for="textarea">備考</label>
+      </p>
+      <textarea id="textarea" name="textarea"></textarea>
+    </div>
+    <input type="submit" value="申し込み" id="submitBtn">
+  </form>
+</div>
+</main>
+</body>
+</html>
